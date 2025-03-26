@@ -1,0 +1,48 @@
+configuration {
+    modi: "drun,run";
+    show-icons: false;
+    font: "monospace 10";
+    fullscreen: false;
+    dpi: 96;
+}
+
+* {
+    background: #2E3440;  /* Nord0 */
+    foreground: #D8DEE9;  /* Nord4 */
+    selected-background: #88C0D0; /* Nord8 */
+    selected-foreground: #2E3440; /* Nord0 */
+    border: 0;
+    padding: 6;
+    spacing: 5;
+    width: 50%;
+}
+
+window {
+    location: center;
+    border-radius: 6px;
+}
+
+inputbar {
+    background: @background;
+    text-color: @foreground;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+listview {
+    padding: 5px;
+    lines: 10;
+}
+
+element {
+    background: transparent;
+    text-color: @foreground;
+}
+
+element selected {
+    background: @selected-background;
+    text-color: @selected-foreground;
+    border-radius: 4px;
+}
+
+@theme "/usr/share/rofi/themes/DarkBlue.rasi"
